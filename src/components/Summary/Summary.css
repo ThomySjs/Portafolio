@@ -1,0 +1,143 @@
+.summary-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--section-padding);
+    background-color: var(--contrast-background);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--background-color);
+    padding: 4rem;
+}
+
+.summary-content h2 {
+    text-align: center;
+    font-size: var(--titles-font-size);
+    padding-bottom: 4rem;
+}
+
+#summary-text {
+    font-size: 2rem;
+    white-space: pre-line;
+    max-height: 420px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.summary-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-image img {
+    width: min(500px, 50vw);
+    height: min(500px, 50vw);
+    object-fit: contain;
+}
+
+.back-button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.show-buttons-container {
+    width: 100%;
+    text-align: center;
+}
+
+.show-button {
+    padding-top: 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#show-less-button {
+    display: none;
+}
+
+.genially-button-container {
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    margin: 3rem 0;
+    align-self: center;
+    background-color: #C3E9E2;
+    border-radius: var(--border-radius);
+}
+
+.genially-a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.genially-a img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1300px) {
+    .summary-image {
+        width: 40%;
+    }
+
+    .summary-image img {
+        width: min(400px, 50vw);
+        height: min(400px, 50vw);
+    }
+
+    .summary-content {
+        width: 60%;
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #summary-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .summary-container {
+        flex-direction: column-reverse;
+    }
+
+    .summary-content {
+        width: 100%;
+    }
+
+    #summary-text {
+        max-height: 100%;
+    }
+
+    #show-more-button {
+        display: none;
+    }
+}

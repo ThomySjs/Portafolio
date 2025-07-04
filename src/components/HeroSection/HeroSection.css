@@ -1,0 +1,66 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 70%;
+    height: 100%;
+    align-content: center;
+}
+
+.hero-image img {
+    max-width: min(600px, 40vw);
+    height: min(600px, 40vw);
+}
+
+.hero-image img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: var(--main-title-font-size);
+    font-family: 'Lobster', sans-serif;
+    color: var(--text-color);
+}
+
+.name {
+    font-size: var(--subtitles-font-size);
+    color: var(--text-color);
+}
+
+.university-name {
+    font-size: var(--text-font-size);
+    color: rgba(197, 197, 197, 0.479);
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        height: auto;
+    }
+
+    .hero-content {
+        height: auto;
+    }
+}
