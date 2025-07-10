@@ -1,0 +1,120 @@
+.practice-work-container {
+    width: 100%;
+    min-height: 600px;
+    padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-header {
+    font-size: var(--titles-font-size);
+    color: var(--contrast-background);
+}
+
+.pw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.pw-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+.tp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    min-height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.tp {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    background-color: var(--contrast-background);
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.tp h3 {
+    width: 70%;
+    text-align: start;
+    padding-left: 1rem;
+    color: var(--background-color);
+    font-weight: 300;
+}
+
+.tp-button {
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.unit-selection {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    color: var(--background-color);
+    background-color: var(--contrast-background);
+    cursor: pointer;
+}
+
+.pw-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.pw-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .tp {
+        width: 350px;
+        height: 70px;
+    }
+
+    .unit-selection {
+        height: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .pw {
+        flex-direction: column;
+    }
+
+    .pw-image-container {
+        width: 600px;
+        height: 500px;
+    }
+
+    .pw-content {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .pw-image-container {
+        width: 450px;
+        height: 450px;
+    }
+}
