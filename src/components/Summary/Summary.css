@@ -140,4 +140,27 @@
     #show-more-button {
         display: none;
     }
+
+    .summary-content h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .summary-content {
+        padding: 0;
+    }
+
+    .summary-content h2 {
+        font-size: var(--subtitles-font-size);
+    }
+
+    #summary-text {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        top: 1rem;
+        left: 1rem;
+    }
 }

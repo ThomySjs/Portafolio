@@ -1,6 +1,7 @@
 import "./Summary.css"
 import { HiArrowCircleLeft } from "react-icons/hi";
 import { motion } from "motion/react";
+import geniallyImage from '/assets/genially.svg';
 
 
 function Modal({visible, title, summary, image, genially, onClick}) {
@@ -32,7 +33,14 @@ function Modal({visible, title, summary, image, genially, onClick}) {
 
     return (
         <div className="summary-container">
-            <a className="back-button" onClick={onClick}><HiArrowCircleLeft size={48} color="#fff0fe"/></a>
+            <motion.a
+                className="back-button"
+                onClick={onClick}
+                whileHover={ { scale: 1.1 } }
+                whileTap={ { scale: 0.9 } }
+            >
+                <HiArrowCircleLeft size={48} color="#fff0fe"/>
+            </motion.a>
             <div className="summary-content">
                 <h2>{title}</h2>
                 <p id="summary-text">{summary}</p>
@@ -43,8 +51,9 @@ function Modal({visible, title, summary, image, genially, onClick}) {
                 <motion.div
                     className="genially-button-container"
                     whileHover={{ scale: 1.1 }}
+                    whileTap={ { scale: .9 }}
                 >
-                    <a href={genially} target="_blank" className="genially-a"><img src="assets/genially.svg"/>Ver genially</a>
+                    <a href={genially} target="_blank" className="genially-a"><img src={geniallyImage}/>Ver genially</a>
                 </motion.div>
             </div>
             <div className="summary-image">
