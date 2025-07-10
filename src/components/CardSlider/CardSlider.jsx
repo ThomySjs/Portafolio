@@ -1,7 +1,7 @@
 import "./CardSlider.css"
 import Card from "../Card/Card"
 import texts from "../../data/texts"
-import Modal from "../Summary/Summary"
+import { motion } from "motion/react"
 import { useState } from "react"
 import { SlArrowLeftCircle } from "react-icons/sl";
 import { SlArrowRightCircle } from "react-icons/sl";
@@ -37,7 +37,7 @@ function CardSlider({visible, onCardClick, cardIndex}) {
         }
     }
     return (
-        <div className="card-slider">
+        <div className="card-slider" id="Resúmenes">
             <div className="section-title">
                 <h2>Resúmenes</h2>
             </div>
@@ -58,8 +58,22 @@ function CardSlider({visible, onCardClick, cardIndex}) {
                 ))}
             </div>
             <div className="slider-buttons">
-                <a onClick={toLeft} className="slider-arrows"><SlArrowLeftCircle size={56} color="#fff0fe"/></a>
-                <a onClick={toRight} className="slider-arrows"><SlArrowRightCircle size={56} color="#fff0fe"/></a>
+                <motion.a
+                    onClick={toLeft}
+                    className="slider-arrows"
+                    whileHover={ { scale: 1.05 } }
+                    whileTap={ { scale: .90 } }
+                >
+                    <SlArrowLeftCircle size={56} color="#fff0fe"/>
+                </motion.a>
+                <motion.a
+                    onClick={toRight}
+                    className="slider-arrows"
+                    whileHover={ { scale: 1.05 } }
+                    whileTap={ { scale: .90 } }
+                >
+                    <SlArrowRightCircle size={56} color="#fff0fe"/>
+                </motion.a>
             </div>
         </div>
     )
