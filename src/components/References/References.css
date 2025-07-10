@@ -1,10 +1,11 @@
 .references-container {
     width: 100%;
     height: auto;
-    background-color: var(--background-color);
+    background-color: var(--contrast-background);
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: var(--section-padding);
 }
 
@@ -13,17 +14,18 @@
 }
 
 .header-container h2 {
-    color: var(--contrast-background);
+    color: var(--background-color);
     font-size: var(--titles-font-size);
 }
 
 .items-container {
     padding-top: 3rem;
     width: 100%;
+    max-width: 750px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 20px;
+    justify-content: flex-start;
 }
 
 .reference {
@@ -31,7 +33,7 @@
     height: 100px;
     text-align: center;
     background-color: var(--background-color);
-    border: 3px solid var(--contrast-background);
+    border: 3px solid #50434f;
     border-radius: var(--border-radius);
     cursor: pointer;
 }
@@ -46,7 +48,7 @@
 }
 
 .reference h3, h4 {
-    color: var(--contrast-background);
+    color: var(--text-color);
 }
 
 .reference h3 {
@@ -60,6 +62,12 @@
 .reference:hover {
     h3, h4 {
         color: var(--background-color);
+    }
+}
+
+@media (max-width: 800px) {
+    .items-container {
+        justify-content: center;
     }
 }
 
