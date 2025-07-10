@@ -11,6 +11,12 @@
     z-index: 1;
     font-size: 1.3rem;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.651);
+    transition: top 0.5s ease;
+}
+
+.navbar-hidden {
+    top: -70px;
+    transition: top 0.5s ease;
 }
 
 .logo-container {
