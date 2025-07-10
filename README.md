@@ -1,4 +1,4 @@
-# Portafolio - psicologia social e institucional
+# Portafolio - Psicología Social e Institucional
 Portafolio personal desarrollado para la asignatura Psicología Social e Institucional, correspondiente a la carrera de Educación Inicial. Se incluyen trabajos prácticos, resúmenes y bibliografias de los textos.
 
 ## Objetivos 🎯
