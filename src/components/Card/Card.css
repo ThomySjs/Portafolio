@@ -18,6 +18,7 @@
 }
 
 .card-title {
+    color: var(--text-color);
     font-size: 1.3rem;
     font-weight: 300;
 }
@@ -32,7 +33,7 @@
 .summary-button {
     width: 100px;
     padding: 8px;
-    background-color: #9d4edd;
+    background-color: var(--button-color);
     border: none;
     border-radius: var(--border-radius);
     color: var(--background-color);
@@ -40,7 +41,7 @@
 }
 
 .summary-button:hover {
-    background-color: var(--text-color);
+    background-color: #3a3039;
 }
 
 .card-image-container {
@@ -57,6 +58,7 @@
 @media (max-width: 1000px) {
     .card-title {
         font-size: 1rem;
+        line-height: 1rem;
     }
 
     .summary-button {
@@ -79,5 +81,15 @@
 
     .summary-button {
         font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .summary-button {
+        font-size: .8rem;
     }
 }

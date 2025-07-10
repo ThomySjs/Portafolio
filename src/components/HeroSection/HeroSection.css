@@ -1,5 +1,4 @@
 .hero-section {
-    position: relative;
     height: 100vh;
     min-height: 600px;
     width: 100%;
@@ -37,7 +36,7 @@
 .hero-title {
     font-size: var(--main-title-font-size);
     font-family: 'Lobster', sans-serif;
-    color: var(--text-color);
+    color: var(--hero-title-color);
 }
 
 .name {
@@ -60,7 +59,16 @@
         height: auto;
     }
 
+    .hero-image img {
+        min-width: 360px;
+        min-height: 360px;
+    }
+
     .hero-content {
         height: auto;
+    }
+
+    .name  {
+        font-size: 1.5rem;
     }
 }
