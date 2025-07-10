@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { Link } from 'react-router-dom'
 import HeroSection from './components/HeroSection/HeroSection'
 import CardSlider from './components/CardSlider/CardSlider'
 import Summary from './components/Summary/Summary'
 import References from './components/References/References'
+import PracticeWork from './components/PracticeWork/PracticeWork'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   const [summaryVisible, setSummaryVisible] = useState(false)
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div className="app">
+      <Navbar/>
       <HeroSection/>
       <CardSlider
         visible={cardSliderVisible}
