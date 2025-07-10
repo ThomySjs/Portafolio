@@ -51,6 +51,7 @@ function App() {
         genially={selectedGenially}
         onClick={() => closeSummary(selectedCardIndex)}
       />
+      <PracticeWork/>
       <References/>
     </div>
   )
