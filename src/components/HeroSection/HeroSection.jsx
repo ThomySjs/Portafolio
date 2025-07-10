@@ -1,12 +1,12 @@
 import React from 'react';
 import './HeroSection.css';
-import image from '../../assets/hero-logo.svg'
+import image from '/assets/hero-image.svg'
 
 function HeroSection() {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="Inicio">
       <div className="hero-image">
-        <img src="/assets/hero-image.svg" alt="hero-image" />
+        <img src={image} alt="hero-image" />
       </div>
       <div className="hero-content">
         <h1 className="hero-title">Psicología Social e Institucional</h1>
